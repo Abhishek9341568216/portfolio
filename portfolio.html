@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek Aanand - Portfolio</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for a modern, attractive look (Red/Black Theme) */
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .section-header {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 2rem;
+        }
+        .section-header::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 50%;
+            height: 4px;
+            background-color: #ef4444; /* Red-500 */
+            border-radius: 9999px;
+        }
+        .project-card:hover {
+            /* Intense red shadow on hover for the aesthetic */
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(239, 68, 68, 0.4), 0 4px 6px -2px rgba(239, 68, 68, 0.2);
+        }
+        .nav-link:hover {
+            color: #f87171; /* Red-400 */
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200 antialiased">
+
+    <!-- Navigation Bar -->
+    <header class="sticky top-0 z-50 bg-gray-900/90 backdrop-blur-md shadow-lg">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <a href="#hero" class="text-2xl font-bold text-red-400 hover:text-red-300 transition duration-300">Abhishek Aanand</a>
+            <div class="space-x-4 sm:space-x-8 text-lg hidden sm:flex">
+                <a href="#about" class="nav-link transition duration-300">About</a>
+                <a href="#skills" class="nav-link transition duration-300">Skills</a>
+                <a href="#projects" class="nav-link transition duration-300">Experience</a>
+                <a href="#contact" class="nav-link transition duration-300">Contact</a>
+            </div>
+            <!-- Mobile Menu Placeholder -->
+            <div class="sm:hidden">
+                <button class="text-gray-200 focus:outline-none">
+                    <!-- Hamburger Icon SVG -->
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Hero Section -->
+        <section id="hero" class="h-screen flex items-center justify-center text-center">
+            <div class="max-w-4xl space-y-6 p-6 md:p-10 rounded-xl">
+                <p class="text-xl text-red-400 font-medium tracking-wider uppercase">Hello, I'm Abhishek Aanand</p>
+                <h1 class="text-5xl sm:text-7xl lg:text-8xl font-extrabold leading-tight text-gray-50">
+                    Crafting <span class="text-red-500">Intuitive</span> Experiences and Digital Solutions.
+                </h1>
+                <p class="text-lg sm:text-xl text-gray-400 max-w-2xl mx-auto">
+                    A multi-talented professional blending Lead UI/UX design with full-stack development, driven by impactful projects and a commitment to elegant code.
+                </p>
+                <a href="#projects" class="inline-block mt-8 px-8 py-3 text-lg font-semibold bg-red-600 text-white rounded-full shadow-lg hover:bg-red-500 transition duration-300 transform hover:scale-105">
+                    View My Work
+                </a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20">
+            <h2 class="section-header text-4xl font-bold text-gray-50 mb-12">About Me</h2>
+            <div class="grid md:grid-cols-3 gap-12 items-center">
+                <div class="md:col-span-2 space-y-6 text-lg text-gray-300">
+                    <p>
+                        I specialize in creating end-to-end digital solutions, from initial user research and high-fidelity prototyping in Figma to full-stack implementation using modern technologies like Tailwind, JavaScript, and Python. My experience ranges from developing large-scale smart ticketing systems and e-commerce platforms to solving critical civic issues.
+                    </p>
+                    <p>
+                        Beyond traditional development, I have a strong foundation in C++ for DSA and a passion for mentorship, having taught computing concepts to underprivileged students. I bring a holistic view to every project, ensuring functionality, scalability, and user-centric design are prioritized.
+                    </p>
+                </div>
+                <!-- Placeholder Image/Avatar with Initials -->
+                <div class="flex justify-center md:justify-end">
+                    <div class="w-48 h-48 bg-red-700/50 border-4 border-red-600 rounded-full flex items-center justify-center shadow-2xl">
+                        <span class="text-6xl text-white">AA</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-20">
+            <h2 class="section-header text-4xl font-bold text-gray-50 mb-12">Technical Skills</h2>
+            <h3 class="text-2xl font-semibold text-red-400 mb-6">Frontend & Design</h3>
+            <div class="flex flex-wrap gap-4 mb-10">
+                <span class="px-4 py-2 bg-red-700 text-red-200 text-sm font-medium rounded-full shadow-md transition duration-300 hover:bg-red-600">HTML</span>
+                <span class="px-4 py-2 bg-red-700 text-red-200 text-sm font-medium rounded-full shadow-md transition duration-300 hover:bg-red-600">CSS</span>
+                <span class="px-4 py-2 bg-red-700 text-red-200 text-sm font-medium rounded-full shadow-md transition duration-300 hover:bg-red-600">JavaScript</span>
+                <span class="px-4 py-2 bg-red-700 text-red-200 text-sm font-medium rounded-full shadow-md transition duration-300 hover:bg-red-600">Tailwind CSS</span>
+                <span class="px-4 py-2 bg-red-700 text-red-200 text-sm font-medium rounded-full shadow-md transition duration-300 hover:bg-red-600">Responsive UI/UX</span>
+                <span class="px-4 py-2 bg-red-700 text-red-200 text-sm font-medium rounded-full shadow-md transition duration-300 hover:bg-red-600">3D UI Elements</span>
+                <span class="px-4 py-2 bg-red-700 text-red-200 text-sm font-medium rounded-full shadow-md transition duration-300 hover:bg-red-600">Figma (Prototyping, Mockups)</span>
+            </div>
+
+            <h3 class="text-2xl font-semibold text-red-400 mb-6">Backend & Programming</h3>
+            <div class="flex flex-wrap gap-4 mb-10">
+                <span class="px-4 py-2 bg-red-700 text-red-200 text-sm font-medium rounded-full shadow-md transition duration-300 hover:bg-red-600">Python</span>
+                <span class="px-4 py-2 bg-red-700 text-red-200 text-sm font-medium rounded-full shadow-md transition duration-300 hover:bg-red-600">Flask / Basic Django</span>
+                <span class="px-4 py-2 bg-red-700 text-red-200 text-sm font-medium rounded-full shadow-md transition duration-300 hover:bg-red-600">C++ (DSA Foundations)</span>
+                <span class="px-4 py-2 bg-red-700 text-red-200 text-sm font-medium rounded-full shadow-md transition duration-300 hover:bg-red-600">API Integration</span>
+            </div>
+
+            <h3 class="text-2xl font-semibold text-red-400 mb-6">Tools & Platforms</h3>
+            <div class="flex flex-wrap gap-4">
+                <span class="px-4 py-2 bg-red-700 text-red-200 text-sm font-medium rounded-full shadow-md transition duration-300 hover:bg-red-600">GitHub</span>
+                <span class="px-4 py-2 bg-red-700 text-red-200 text-sm font-medium rounded-full shadow-md transition duration-300 hover:bg-red-600">VS Code</span>
+                <span class="px-4 py-2 bg-red-700 text-red-200 text-sm font-medium rounded-full shadow-md transition duration-300 hover:bg-red-600">Canva</span>
+            </div>
+        </section>
+
+        <!-- Projects Section (Updated with User Experience) -->
+        <section id="projects" class="py-20">
+            <h2 class="section-header text-4xl font-bold text-gray-50 mb-12">Professional Experience</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Project Card 1: Journix -->
+                <div class="project-card bg-gray-800 p-6 rounded-xl shadow-xl transition duration-500 border border-gray-700 hover:border-red-500 cursor-pointer">
+                    <h3 class="text-xl font-semibold text-red-400 mb-3">UI/UX Designer – Journix (Smart Ticketing System for Delhi)</h3>
+                    <p class="text-sm font-medium text-gray-400 mb-3">Role: Lead UI/UX Designer</p>
+                    <p class="text-gray-400 mb-4 text-sm">
+                        Designed a complete smart ticketing system tailored for Delhi’s diverse population. Created user flows, wireframes, and high-fidelity prototypes ensuring smooth navigation for students, tourists, and daily commuters.
+                    </p>
+                    <div class="flex flex-wrap gap-2 text-xs">
+                        <span class="bg-gray-700 text-gray-300 px-3 py-1 rounded-full">Figma</span>
+                        <span class="bg-gray-700 text-gray-300 px-3 py-1 rounded-full">Prototyping</span>
+                        <span class="bg-gray-700 text-gray-300 px-3 py-1 rounded-full">User Research</span>
+                    </div>
+                </div>
+
+                <!-- Project Card 2: Nitish Metal India -->
+                <div class="project-card bg-gray-800 p-6 rounded-xl shadow-xl transition duration-500 border border-gray-700 hover:border-red-500 cursor-pointer">
+                    <h3 class="text-xl font-semibold text-red-400 mb-3">Web Developer – Nitish Metal India (Retail Website)</h3>
+                    <p class="text-sm font-medium text-gray-400 mb-3">Role: Full-Stack / UI Developer</p>
+                    <p class="text-gray-400 mb-4 text-sm">
+                        Built an end-to-end stainless-steel retail platform with clean product layouts, category structure, and mobile-first experience. Ensured fast load time and modern visual design.
+                    </p>
+                    <div class="flex flex-wrap gap-2 text-xs">
+                        <span class="bg-gray-700 text-gray-300 px-3 py-1 rounded-full">HTML/CSS/JS</span>
+                        <span class="bg-gray-700 text-gray-300 px-3 py-1 rounded-full">Tailwind</span>
+                        <span class="bg-gray-700 text-gray-300 px-3 py-1 rounded-full">Responsive Design</span>
+                    </div>
+                </div>
+
+                <!-- Project Card 3: Grocery 3D Website Project -->
+                <div class="project-card bg-gray-800 p-6 rounded-xl shadow-xl transition duration-500 border border-gray-700 hover:border-red-500 cursor-pointer">
+                    <h3 class="text-xl font-semibold text-red-400 mb-3">Grocery 3D Website Project</h3>
+                    <p class="text-sm font-medium text-gray-400 mb-3">Role: UI/UX + Frontend Developer</p>
+                    <p class="text-gray-400 mb-4 text-sm">
+                        Developed a visually appealing grocery website with animations, folder-wise structured code, and standard e-commerce features like cart, wishlist, categories, filters, and a modern homepage.
+                    </p>
+                    <div class="flex flex-wrap gap-2 text-xs">
+                        <span class="bg-gray-700 text-gray-300 px-3 py-1 rounded-full">JavaScript</span>
+                        <span class="bg-gray-700 text-gray-300 px-3 py-1 rounded-full">Tailwind</span>
+                        <span class="bg-gray-700 text-gray-300 px-3 py-1 rounded-full">Three.js (3D UI)</span>
+                    </div>
+                </div>
+
+                <!-- Project Card 4: Teaching Underprivileged Students -->
+                <div class="project-card bg-gray-800 p-6 rounded-xl shadow-xl transition duration-500 border border-gray-700 hover:border-red-500 cursor-pointer">
+                    <h3 class="text-xl font-semibold text-red-400 mb-3">Teaching Underprivileged Students</h3>
+                    <p class="text-sm font-medium text-gray-400 mb-3">Role: Educator & Mentor</p>
+                    <p class="text-gray-400 mb-4 text-sm">
+                        Designed simple learning modules, explained concepts using interactive examples, and helped students develop confidence in tech and basic computing.
+                    </p>
+                    <div class="flex flex-wrap gap-2 text-xs">
+                        <span class="bg-gray-700 text-gray-300 px-3 py-1 rounded-full">Education</span>
+                        <span class="bg-gray-700 text-gray-300 px-3 py-1 rounded-full">Mentorship</span>
+                        <span class="bg-gray-700 text-gray-300 px-3 py-1 rounded-full">Tech Literacy</span>
+                    </div>
+                </div>
+
+                <!-- Project Card 5: Civic Issues Project (SIH) -->
+                <div class="project-card bg-gray-800 p-6 rounded-xl shadow-xl transition duration-500 border border-gray-700 hover:border-red-500 cursor-pointer">
+                    <h3 class="text-xl font-semibold text-red-400 mb-3">Civic Issues Project (SIH)</h3>
+                    <p class="text-sm font-medium text-gray-400 mb-3">Role: Problem Solver + UI Design</p>
+                    <p class="text-gray-400 mb-4 text-sm">
+                        Created a streamlined model to report civic issues instantly, integrating map-based reporting, categorization, and dashboard insights for municipal corporations.
+                    </p>
+                    <div class="flex flex-wrap gap-2 text-xs">
+                        <span class="bg-gray-700 text-gray-300 px-3 py-1 rounded-full">UI Design</span>
+                        <span class="bg-gray-700 text-gray-300 px-3 py-1 rounded-full">Map Integration</span>
+                        <span class="bg-gray-700 text-gray-300 px-3 py-1 rounded-full">Problem Solving</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20">
+            <h2 class="section-header text-4xl font-bold text-gray-50 mb-12">Get In Touch</h2>
+            <div class="max-w-2xl mx-auto bg-gray-800 p-8 sm:p-12 rounded-xl shadow-2xl border border-red-700/50">
+                <p class="text-xl text-gray-300 mb-6 text-center">
+                    Let's discuss how my blend of UI/UX design and development skills can elevate your next project.
+                </p>
+                <!-- Simple Contact Form Placeholder -->
+                <form action="#" method="POST" class="space-y-6">
+                    <div>
+                        <input type="text" placeholder="Your Name" required
+                               class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-red-500 focus:border-red-500 text-white placeholder-gray-400">
+                    </div>
+                    <div>
+                        <input type="email" placeholder="Your Email" required
+                               class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-red-500 focus:border-red-500 text-white placeholder-gray-400">
+                    </div>
+                    <div>
+                        <textarea rows="4" placeholder="Your Message" required
+                                  class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-red-500 focus:border-red-500 text-white placeholder-gray-400"></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit"
+                                class="w-full sm:w-auto px-8 py-3 text-lg font-semibold bg-red-600 text-white rounded-full shadow-lg hover:bg-red-500 transition duration-300 transform hover:scale-[1.02]">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Direct Contact Info -->
+            <div class="mt-16 text-center text-gray-400 space-y-3">
+                <!-- NOTE: Replace these placeholders with your real contact info -->
+                <p>Email: <a href="mailto:abhishek.aanand@example.com" class="text-red-400 hover:text-red-300 transition duration-300">abhishek.aanand@example.com</a></p>
+                <p>LinkedIn: <a href="https://linkedin.com/in/abhishekaanand" target="_blank" class="text-red-400 hover:text-red-300 transition duration-300">/in/abhishekaanand</a></p>
+                <p>GitHub: <a href="https://github.com/abhishekaananddev" target="_blank" class="text-red-400 hover:text-red-300 transition duration-300">/abhishekaananddev</a></p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 border-t border-gray-700 py-6 mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-500 text-sm">
+            &copy; 2025 Abhishek Aanand. All rights reserved. | Crafted with <span class="text-red-500">&hearts;</span> and Tailwind CSS.
+        </div>
+    </footer>
+
+</body>
+</html>
